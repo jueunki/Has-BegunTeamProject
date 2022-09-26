@@ -36,7 +36,7 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-		log.info("Log4j Test!!!");
+		log.info("TEST");
 		
 		return "home";
 		
