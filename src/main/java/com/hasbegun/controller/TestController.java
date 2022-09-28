@@ -18,9 +18,9 @@ public class TestController {
 		log.info("URL : /main2.do");
 	}
 
-	@GetMapping("/signup.do")
+	@GetMapping("/")
 	public void testFunc3() {
-		log.info("URL : /signup.do");
+		log.info("URL : /");
 	}
 
 }
