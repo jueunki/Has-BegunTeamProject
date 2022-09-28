@@ -155,7 +155,7 @@ li {
 		<div style="width:20vw; height:10vh; margin:5%; margin-top:0%">
 			<h4>식단관리 한식 도시락</h4>
 			<h6>맛과 건강을 모두 고려한 식단 관리</h6>
-			<h6>5,000원</h6>
+			<h6>5,000원</h6> 
 		</div>
 		<div style="width:20vw; height:10vh; margin:5%; margin-top:0%">
 			<h4>식단관리 한식 도시락</h4>
