@@ -29,7 +29,7 @@
 			<%@ include file="include/footer.jsp" %>
 		</div>
 	</footer>
+ 
 </div>
-<P>  The time on the server is ${serverTime}. </P>
 </body>
 </html>

@@ -11,6 +11,17 @@ public class TestController {
 	@GetMapping("/main.do")
 	public String testFunc() {
 		log.info("URL : /main.do");
-		return "main";
+		return "main";		
 	}
+	@GetMapping("/main2")
+	public void testFunc2() {
+		log.info("URL : /main2.do");
+	}
+
+	@GetMapping("/signup.do")
+	public void testFunc3() {
+		log.info("URL : /signup.do");
+	}
+
 }
+
