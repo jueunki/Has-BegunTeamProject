@@ -23,9 +23,11 @@
 	vertical-align: top;
 	list-style-type: disc;
 }
+
 .topnav li {
-	font-size:1rem;
+	font-size: 1rem;
 }
+
 li {
 	list-style: none;
 	margin: 10px;
@@ -44,24 +46,114 @@ li {
 
 .has {
 	font-size: 500%;
-	
 }
 
 .mid {
-	height: 500vh; 
+	height: 320vh; 
+} 
+
+.img {
+	width: 20vw;
+	height: 20vh;
 }
-.img{
-	width:20vw; height:20vh;
+
+#slider-div {
+	width: 70vw;
+	height: 30vh;
+	border: 1px solid gray;
+	background-color: gray;
+	position: absolute;
+	left: 15%;
+	top: 35%;
 }
-#slider-div{
-	width: 70vw; height: 30vh; border: 1px solid gray; background-color: gray; position: absolute; left: 15%; top: 35%;
+/* nav css */
+#wrapper {
+  background-color: rgb(191, 194, 196);
+  position: relative;
+  padding: 0;
+}
+
+#nav {
+  width: 100%;
+  max-width: 1024px;
+  padding: auto;
+  margin: 0 auto;
+}
+
+#menu__list {
+  display: table;
+  list-style-type: none;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+#menu__menu {
+  display: table-cell;
+  vertical-align: middle;
+
+  height: 50px;
+}
+
+#menu__menu:hover {
+  background-color: #deb6ab;
+}
+
+#menu__menu:hover #subwrapper {
+  display: block;
+}
+
+#menu__menu:hover #submenu__list {
+  display: table;
+}
+
+#subwrapper {
+  display: none;
+
+  background-color: #deb6ab;
+
+  width: 100%;
+
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+#subnav {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+#submenu__list {
+  display: none;
+  list-style-type: none;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+#submenu__menu {
+  display: table-cell;
+  vertical-align: middle;
+
+  height: 50px;
+
+  cursor: pointer;
+}
+
+#submenu__menu:hover {
+  background-color: #ac7d88;
 }
 </style>
 <header>
 	<div class="inner">
 		<div class="qickmenu">
 			<ul class="topnav">
-				<li><a href="">로그인</a></li> 
+				<li><a href="">로그인</a></li>
 				<li><a href="">가입하기</a></li>
 				<li><a href="">장바구니</a></li>
 				<li><a href="">고객센터</a></li>
@@ -73,100 +165,172 @@ li {
 			<a class="has"> Has Began </a>
 		</div>
 	</div>
-</header> 
+</header>
 <nav></nav>
 
-<body class="mid">
+<body>
+<div id="wrapper">
+      <nav id="nav">
+        <ul id="menu__list">
+          <li id="menu__menu">
+            헬스
+            <div id="subwrapper">
+              <nav id="subnav">
+                <ul id="submenu__list">
+                  <li id="submenu__menu">서브메뉴 1</li>
+                  <li id="submenu__menu">서브메뉴 2</li>
+                  <li id="submenu__menu">서브메뉴 3</li>
+                </ul>
+              </nav>
+            </div>
+          </li>
+          <li id="menu__menu">
+            비건/밀키트
+            <div id="subwrapper">
+              <nav id="subnav">
+                <ul id="submenu__list">
+                  <li id="submenu__menu">서브메뉴 a</li>
+                  <li id="submenu__menu">서브메뉴 b</li>
+                  <li id="submenu__menu">서브메뉴 c</li>
+                </ul>
+              </nav>
+            </div>
+          </li>
+          <li id="menu__menu">
+            건강/뷰티
+            <div id="subwrapper">
+              <nav id="subnav">
+                <ul id="submenu__list">
+                  <li id="submenu__menu">서브메뉴 !</li>
+                  <li id="submenu__menu">서브메뉴 @</li>
+                  <li id="submenu__menu">서브메뉴 #</li>
+                </ul>
+              </nav>
+            </div>
+          </li>
+          <li id="menu__menu"><a href="">게시판</a></li>
+          <li id="menu__menu"><a href="">오시는길</a></li>
+        </ul>
+      </nav>
+    </div>
+<div class="mid">
 	<div class="imgsd"
 		style="width: 70vw; height: 30vh; border: 1px solid gray; background-color: gray; position: absolute; left: 15%; top: 35%;">슬라이드
 		이미지 자리</div>
 	<!-- stlye 은 slick 영역 확인용 -->
 	<div style="padding: 300px 100px;">
 		<div id="slider-div">
-			<div>1<img alt="" src="/img/img1.jpg"></div>
-			<div>2<img alt="" src="/img/img2.jpg"></div>
-			<div>3<img alt="" src="/img/img3.jpg"></div>
-			<div>4<img alt="" src="/img/img4.jpg"></div>
-			<div>5<img alt="" src="/img/img5.jpg"></div>
+			<div>
+				1<img alt="" src="/img/img1.jpg">
+			</div>
+			<div>
+				2<img alt="" src="/img/img2.jpg">
+			</div>
+			<div>
+				3<img alt="" src="/img/img3.jpg">
+			</div>
+			<div>
+				4<img alt="" src="/img/img4.jpg">
+			</div>
+			<div>
+				5<img alt="" src="/img/img5.jpg">
+			</div>
 		</div>
 	</div>
-	<h5 style="width:10vw; height:1vh; position:relative; left:10%">new !</h5>  
-		<hr style="width:80vw;">
-	<div class="main_box" style="display:flex;flex-direction: row; padding-left:5%;">
-		<div class="mid_box1" style="border:1px solid gray; width:20vw; height:40vh; margin:5%;"></div> 
-		<div class="mid_box2" style="border:1px solid gray; width:20vw; height:40vh; margin:5%;"></div>
-		<div class="mid_box3" style="border:1px solid gray; width:20vw; height:40vh; margin:5%;"> 
+	<h5 style="width: 10vw; height: 1vh; position: relative; left: 10%">new
+		!</h5>
+	<hr style="width: 80vw;">
+	<div class="main_box"
+		style="display: flex; flex-direction: row; padding-left: 5%;">
+		<div class="mid_box1"
+			style="border: 1px solid gray; width: 20vw; height: 40vh; margin: 5%;"></div>
+		<div class="mid_box2"
+			style="border: 1px solid gray; width: 20vw; height: 40vh; margin: 5%;"></div>
+		<div class="mid_box3"
+			style="border: 1px solid gray; width: 20vw; height: 40vh; margin: 5%;">
+		</div>
 	</div>
-	</div>
-	<div class="m_text" style="display:flex;flex-direction: row; padding-left:5%;">	
-		<div style="width:20vw; height:10vh; margin:5%; margin-top:0%">
+	<div class="m_text"
+		style="display: flex; flex-direction: row; padding-left: 5%;">
+		<div style="width: 20vw; height: 10vh; margin: 5%; margin-top: 0%">
 			<h4>식단관리 한식 도시락</h4>
 			<h6>맛과 건강을 모두 고려한 식단 관리</h6>
 			<h6>5,000원</h6>
 		</div>
-		<div style="width:20vw; height:10vh; margin:5%; margin-top:0%">
+		<div style="width: 20vw; height: 10vh; margin: 5%; margin-top: 0%">
 			<h4>식단관리 한식 도시락</h4>
 			<h6>맛과 건강을 모두 고려한 식단 관리</h6>
 			<h6>5,000원</h6>
 		</div>
-		<div style="width:20vw; height:10vh; margin:5%; margin-top:0%">
-			<h4>식단관리 한식 도시락</h4>
-			<h6>맛과 건강을 모두 고려한 식단 관리</h6>
-			<h6>5,000원</h6>
-		</div>
-	</div>
-	<h5 style="width:10vw; height:1vh; position:relative; left:10%">Best !</h5>  
-		<hr style="width:80vw;">
-		<div class="main_box" style="display:flex;flex-direction: row; padding-left:5%;">
-		<div class="mid_box1" style="border:1px solid gray; width:20vw; height:40vh; margin:5%;"></div> 
-		<div class="mid_box2" style="border:1px solid gray; width:20vw; height:40vh; margin:5%;"></div>
-		<div class="mid_box3" style="border:1px solid gray; width:20vw; height:40vh; margin:5%;"> 
-	</div>
-	</div>
-	<div class="m_text" style="display:flex;flex-direction: row; padding-left:5%;">	
-		<div style="width:20vw; height:10vh; margin:5%; margin-top:0%">
-			<h4>식단관리 한식 도시락</h4>
-			<h6>맛과 건강을 모두 고려한 식단 관리</h6>
-			<h6>5,000원</h6>
-		</div>
-		<div style="width:20vw; height:10vh; margin:5%; margin-top:0%">
-			<h4>식단관리 한식 도시락</h4>
-			<h6>맛과 건강을 모두 고려한 식단 관리</h6>
-			<h6>5,000원</h6>
-		</div>
-		<div style="width:20vw; height:10vh; margin:5%; margin-top:0%">
+		<div style="width: 20vw; height: 10vh; margin: 5%; margin-top: 0%">
 			<h4>식단관리 한식 도시락</h4>
 			<h6>맛과 건강을 모두 고려한 식단 관리</h6>
 			<h6>5,000원</h6>
 		</div>
 	</div>
-		<div class="main_box" style="display:flex;flex-direction: row; padding-left:5%;">
-		<div class="mid_box1" style="border:1px solid gray; width:20vw; height:40vh; margin:5%;"></div> 
-		<div class="mid_box2" style="border:1px solid gray; width:20vw; height:40vh; margin:5%;"></div>
-		<div class="mid_box3" style="border:1px solid gray; width:20vw; height:40vh; margin:5%;"> 
+	<h5 style="width: 10vw; height: 1vh; position: relative; left: 10%">Best
+		!</h5>
+	<hr style="width: 80vw;">
+	<div class="main_box"
+		style="display: flex; flex-direction: row; padding-left: 5%;">
+		<div class="mid_box1"
+			style="border: 1px solid gray; width: 20vw; height: 40vh; margin: 5%;"></div>
+		<div class="mid_box2"
+			style="border: 1px solid gray; width: 20vw; height: 40vh; margin: 5%;"></div>
+		<div class="mid_box3"
+			style="border: 1px solid gray; width: 20vw; height: 40vh; margin: 5%;">
+		</div>
 	</div>
-	</div>
-	<div class="m_text" style="display:flex;flex-direction: row; padding-left:5%;">	
-		<div style="width:20vw; height:10vh; margin:5%; margin-top:0%">
+	<div class="m_text"
+		style="display: flex; flex-direction: row; padding-left: 5%;">
+		<div style="width: 20vw; height: 10vh; margin: 5%; margin-top: 0%">
 			<h4>식단관리 한식 도시락</h4>
 			<h6>맛과 건강을 모두 고려한 식단 관리</h6>
 			<h6>5,000원</h6>
 		</div>
-		<div style="width:20vw; height:10vh; margin:5%; margin-top:0%">
+		<div style="width: 20vw; height: 10vh; margin: 5%; margin-top: 0%">
 			<h4>식단관리 한식 도시락</h4>
 			<h6>맛과 건강을 모두 고려한 식단 관리</h6>
-			<h6>5,000원</h6> 
+			<h6>5,000원</h6>
 		</div>
-		<div style="width:20vw; height:10vh; margin:5%; margin-top:0%">
+		<div style="width: 20vw; height: 10vh; margin: 5%; margin-top: 0%">
 			<h4>식단관리 한식 도시락</h4>
 			<h6>맛과 건강을 모두 고려한 식단 관리</h6>
 			<h6>5,000원</h6>
 		</div>
 	</div>
-		
-		
-		
-		
+	<div class="main_box"
+		style="display: flex; flex-direction: row; padding-left: 5%;">
+		<div class="mid_box1"
+			style="border: 1px solid gray; width: 20vw; height: 40vh; margin: 5%;"></div>
+		<div class="mid_box2"
+			style="border: 1px solid gray; width: 20vw; height: 40vh; margin: 5%;"></div>
+		<div class="mid_box3"
+			style="border: 1px solid gray; width: 20vw; height: 40vh; margin: 5%;">
+		</div>
+	</div>
+	<div class="m_text"
+		style="display: flex; flex-direction: row; padding-left: 5%;">
+		<div style="width: 20vw; height: 10vh; margin: 5%; margin-top: 0%">
+			<h4>식단관리 한식 도시락</h4>
+			<h6>맛과 건강을 모두 고려한 식단 관리</h6>
+			<h6>5,000원</h6>
+		</div>
+		<div style="width: 20vw; height: 10vh; margin: 5%; margin-top: 0%">
+			<h4>식단관리 한식 도시락</h4>
+			<h6>맛과 건강을 모두 고려한 식단 관리</h6>
+			<h6>5,000원</h6>
+		</div>
+		<div style="width: 20vw; height: 10vh; margin: 5%; margin-top: 0%">
+			<h4>식단관리 한식 도시락</h4>
+			<h6>맛과 건강을 모두 고려한 식단 관리</h6>
+			<h6>5,000원</h6>
+		</div>
+	</div>
+</div>
+
+
+
 </body>
 <script>
 	$(function() {
@@ -207,9 +371,35 @@ li {
 						});
 	})
 </script>
-
+<style>
+    #one {
+      width: 300px;
+      height: 200px;
+      margin-top: 2.5%;
+      margin: auto;
+    }
+  </style>
 <footer>
-
+	<div
+		style="border: 1px solid gray; height: 300px; width: 1600px; border-radius: 30px 30px 30px 30px; display: flex; justify-content: center; margin: auto;">
+		<div id="one">
+			<h3>Bank Info</h3>
+			<span>국민은행 </span><br /> <a>12345-678-900000</a><br /> <span>신한은행
+			</span><br /> <a>12345-678-900000</a>
+			<h4>예금주 메이크미</h4>
+		</div>
+		<div id="one">
+			<h3>Customer Center</h3>
+			<span>1888-8888</span> <a> 평일 10 : 00 ~ 16 : 00</a><br /> <a>주말
+				및 공휴일 제외</a> <a>점심 시간 12:00 ~ 13:00</a>
+		</div>
+		<div id="one">
+			<h3>Company</h3>
+			<h5>이용약관 | 제휴문의 | 개인정보처리방침</h5>
+			<a> 상호명 : </a><br /> <a> 대표이사 : </a><br /> <a> 사업자등록번호 : </a><br />
+			<a> 주소 : </a><br /> <a>약도 보기</a><br />
+		</div>
+	</div>
 </footer>
 
 
