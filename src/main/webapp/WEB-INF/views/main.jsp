@@ -165,11 +165,7 @@ li {
 			<a class="has"> Has Began </a>
 		</div>
 	</div>
-</header>
-<nav></nav>
-
-<body>
-<div id="wrapper">
+	<div id="wrapper">
       <nav id="nav">
         <ul id="menu__list">
           <li id="menu__menu">
@@ -213,6 +209,12 @@ li {
         </ul>
       </nav>
     </div>
+	
+	
+</header>
+
+<body>
+
 <div class="mid">
 	<div class="imgsd"
 		style="width: 70vw; height: 30vh; border: 1px solid gray; background-color: gray; position: absolute; left: 15%; top: 35%;">슬라이드

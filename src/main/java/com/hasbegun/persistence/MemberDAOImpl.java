@@ -1,3 +1,4 @@
+/*
 package com.hasbegun.persistence;
 
 import javax.inject.Inject;
@@ -28,3 +29,4 @@ public class MemberDAOImpl implements MemberDAO {
 	public MemberVO signin(MemberVO vo) throws Exception {
 		return sql.selectOne(namespace + ".signin", vo);
 	}}
+*/

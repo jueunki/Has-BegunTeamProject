@@ -1,9 +1,10 @@
+/*
 package com.hasbegun.domain;
 
 import java.util.Date;
 
 public class GoodsVO {
-/*
+
     gdsNum       number          not null,
     gdsName      varchar2(50)    not null,
     cateCode     varchar2(30)    not null,
@@ -12,7 +13,7 @@ public class GoodsVO {
     gdsDes       varchar(500)    null,
     gdsImg       varchar(200)    null,
     gdsDate      date            default sysdate,
-*/
+
 	private int gdsNum;
 	private String gdsName;
 	private String cateCode;
@@ -74,3 +75,4 @@ public class GoodsVO {
 	
 	
 }
+*/

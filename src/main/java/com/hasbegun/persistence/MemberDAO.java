@@ -1,3 +1,4 @@
+/*
 package com.hasbegun.persistence;
 
 import com.hasbegun.domain.MemberVO;
@@ -11,3 +12,4 @@ public interface MemberDAO {
 	public MemberVO signin(MemberVO vo) throws Exception;
 
 }
+*/

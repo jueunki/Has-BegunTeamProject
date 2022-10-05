@@ -1,3 +1,4 @@
+/*
 package com.hasbegun.service;
 
 import javax.servlet.http.HttpSession;
@@ -15,3 +16,4 @@ public interface MemberService {
 	//·Î±×¾Æ¿ô
 	public void signout(HttpSession session) throws Exception;
 }
+*/

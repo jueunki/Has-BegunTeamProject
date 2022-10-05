@@ -1,3 +1,4 @@
+/*
 package com.hasbegun.controller;
 
 import org.apache.logging.log4j.Logger;
@@ -17,4 +18,5 @@ public class AdminController {
 	public void getIndex() throws Exception {
 		logger.info("get index");
 	}
-}  
+}   
+*/

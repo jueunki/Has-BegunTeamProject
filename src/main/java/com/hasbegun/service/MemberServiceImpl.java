@@ -1,3 +1,4 @@
+/*
 package com.hasbegun.service;
 
 import javax.inject.Inject;
@@ -32,3 +33,4 @@ public class MemberServiceImpl implements MemberService {
 	}
 	
 }
+*/
