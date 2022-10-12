@@ -1,13 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<!-- 제이쿼리 불러오기 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<!-- Slick 불러오기 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-
+<!-- Bootstrap CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous" />
+<!-- BootStrap JS -->
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	crossorigin="anonymous"></script>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -135,129 +139,91 @@ li {
 #submenu__menu:hover {
   background-color: #ac7d88;
 }
+.order{
+	position:absolute; padding-top:5%; margin:0px; top:-140%; left:10%;
+}
+.bx2{
+	left:10%; position:relative;
+}
 </style>
-<header>
-	<div class="inner">
-		<div class="qickmenu">
-			<ul class="topnav">
-				<li><a href="">로그인</a></li>
-				<li><a href="">가입하기</a></li>
-				<li><a href="">장바구니</a></li>
-				<li><a href="">고객센터</a></li>
-			</ul>
-		</div>
-		<div class="Logo"
-			style="width: 100px; height: 80px; border: 1px solid navy"></div>
-		<div class="Mainname" style="display: flex; justify-content: center">
-			<a class="has"> Has Began </a>
-		</div>
-	</div>
-	<div id="wrapper">
-      <nav id="nav">
-        <ul id="menu__list">
-          <li id="menu__menu">
-            헬스
-            <div id="subwrapper">
-              <nav id="subnav">
-                <ul id="submenu__list">
-                  <li id="submenu__menu">서브메뉴 1</li>
-                  <li id="submenu__menu">서브메뉴 2</li>
-                  <li id="submenu__menu">서브메뉴 3</li>
-                </ul>
-              </nav>
-            </div>
-          </li>
-          <li id="menu__menu">
-            비건/밀키트
-            <div id="subwrapper">
-              <nav id="subnav">
-                <ul id="submenu__list">
-                  <li id="submenu__menu">서브메뉴 a</li>
-                  <li id="submenu__menu">서브메뉴 b</li>
-                  <li id="submenu__menu">서브메뉴 c</li>
-                </ul>
-              </nav>
-            </div>
-          </li>
-          <li id="menu__menu">
-            건강/뷰티
-            <div id="subwrapper">
-              <nav id="subnav">
-                <ul id="submenu__list">
-                  <li id="submenu__menu">서브메뉴 !</li>
-                  <li id="submenu__menu">서브메뉴 @</li>
-                  <li id="submenu__menu">서브메뉴 #</li>
-                </ul>
-              </nav>
-            </div>
-          </li>
-          <li id="menu__menu"><a href="">게시판</a></li>
-          <li id="menu__menu"><a href="">오시는길</a></li>
-        </ul>
-      </nav>
-    </div>
-	
-</header>
+<%@include file="/resources/include/header.jsp"%>
 
 
 <body>
-<div class="side" style="width:35vw; height:40vh; border:1px solid gray;">
+<div class="side" style="position:relative; padding-top:5%; margin:0px; top:-140%; width:15vw; height:40vh; left:5%;">
 <!-- 사람얼굴모양 -->
-<i class="bi bi-person-circle" style="width:30vw; height:35vh; border:1px solid gray;"></i>
+<i class="bi bi-person-circle" style="width:10vw; height:10vh; border:1px solid gray;"></i>
 <!-- 펜슬모양 일단 따옴 -->
 <i class="bi bi-pencil" style="width:30vw; height:35vh; border:1px solid gray;"></i>
 <!-- 여기에 -님 장바구니 취소교환 링크 -->
 <div>
-<h3>000 님<a href="/"> > </a></h3>
+<h4>Gest 님<a href="/"> > </a></h4>
 </div>
-<i class="bi bi-cart4" style="border:1px solid red; width:15vw; height:15vh;"><a href="/"><h3>장바구니</h3></a></i>
-<i class="bi bi-arrow-left-right" style="border:1px solid red; width:15vw; height:15vh;"><a href="/"><h3>취소/교환</h3></a></i>
+<i class="bi bi-cart4" style="border:1px solid red; width:15vw; height:15vh;"><a href="/"><h4>장바구니</h4></a></i>
+<i class="bi bi-arrow-left-right" style="border:1px solid red; width:15vw; height:15vh;"><a href="/"><h4>취소/교환</h4></a></i>
 </div>
 
-
-
+<div style="position:relative; left:20%; ">
 <!-- 주문배송조회 -->
 <div class="order">
-<h2>주문 / 배송 조회</h2>
-<div class="bx1" style="border:1px solid red; width:60vw; height:20vh;">
-<h1>0 > 0 > 0 > 0 > 0</h1>
-<h4>주문접수  결제완료  상품준비  배송중  배송완료</h4>
+<h3 style="font-weight:bold;">주문 / 배송 조회</h3>
+<div class="bx1" style="border:1px solid lightgray; border-radius:20px 20px 20px 20px; width:40vw; height:20vh;">
+<h1 style="font-weight:bold; padding-top:5%; padding-left:13%;">0&nbsp; >&nbsp; 0&nbsp; >&nbsp; 0&nbsp; >&nbsp; 0&nbsp; >&nbsp; 0</h1>
+<h6 style="font-weight:bold; padding-top:2%; padding-left:10%;">주문접수&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;결제완료&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;상품준비&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;배송중&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;배송완료</h6>
 </div>
 </div>
-<div class="bx2">
-<h2>주문 현황</h2>
+<div class="bx2" style="width:40vw;"> 
+<h3 style="font-weight:bold;">주문 현황</h3>
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">주문 번호</th>
+      <th scope="col">주문 일자</th>
+      <th scope="col">주문 상품</th>
+      <th scope="col">수량</th>
+      <th scope="col">총 구매 금액</th>
+      <th scope="col">주문 상태</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <th scope="row">0001</th>
+      <td>9/22</td> 
+      <td>아보카도 도시락</td>
+      <td>1</td>
+      <td>5,000</td>
+      <td>입금 완료</td>
     </tr>
     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <th scope="row">0002</th>
+      <td>9/22</td>
+      <td>닭가슴살 샐러드</td>
+      <td>2</td>
+      <td>5,000</td>
+      <td>입금 완료</td>
     </tr>
     <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
+      <th scope="row">0003</th>
+      <td>9/22</td>
+      <td>비건 도시락</td>
+      <td>7</td>
+      <td>5,000</td>
+      <td>입금 완료</td>
     </tr>
+    <tr>
+      <th scope="row">0001</th>
+      <td>9/22</td>
+      <td>프로틴 쉐이크</td>
+      <td>1</td>
+      <td>5,000</td>
+      <td>입금 완료</td>
+    </tr>
+    
   </tbody>
 </table>
 </div>
 
-
+</div>
 </body>
 
 
@@ -269,27 +235,6 @@ li {
       margin: auto;
     }
   </style>
-<footer>
-	<div
-		style="border: 1px solid gray; height: 300px; width: 1600px; border-radius: 30px 30px 30px 30px; display: flex; justify-content: center; margin: auto;">
-		<div id="one">
-			<h3>Bank Info</h3>
-			<span>국민은행 </span><br /> <a>12345-678-900000</a><br /> <span>신한은행
-			</span><br /> <a>12345-678-900000</a>
-			<h4>예금주 메이크미</h4>
-		</div>
-		<div id="one">
-			<h3>Customer Center</h3>
-			<span>1888-8888</span> <a> 평일 10 : 00 ~ 16 : 00</a><br /> <a>주말
-				및 공휴일 제외</a> <a>점심 시간 12:00 ~ 13:00</a>
-		</div>
-		<div id="one">
-			<h3>Company</h3>
-			<h5>이용약관 | 제휴문의 | 개인정보처리방침</h5>
-			<a> 상호명 : </a><br /> <a> 대표이사 : </a><br /> <a> 사업자등록번호 : </a><br />
-			<a> 주소 : </a><br /> <a>약도 보기</a><br />
-		</div>
-	</div>
-</footer>
+<%@include file="/resources/include/footer.jsp"%>
 
 </html>

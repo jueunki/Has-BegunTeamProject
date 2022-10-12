@@ -8,10 +8,10 @@ import lombok.extern.log4j.Log4j;
 @Log4j
 public class TestController {
 	
-	@GetMapping("/map")
+	@GetMapping("/mypage")
 	public String testFunc() {
 		log.info("URL : /main.do");
-		return "map";		
+		return "mypage";		
 	}
 
 	

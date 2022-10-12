@@ -20,9 +20,10 @@
 </head>
 
 <body>
+<h2 style="position:relative; left:10%;padding-top:5%; font-weight:bolder;">게시판</h2>
 	<div style="max-width: 80%; margin: auto; height: 500px">
 
-		<table class="table table-hover">
+		<table class="table table-hover" style="top:20%;position:relative;">
 			<thead>
 				<tr>
 					<th scope="col">No</th>
@@ -69,8 +70,8 @@
 				</tr>
 			</tbody>
 		</table>
-		<input type="button" value="글쓰기" style="float: right" />
-		<nav aria-label="Page navigation example">
+		<div style="top:30%;position:relative;"><input type="button" value="글쓰기" style="float: right" /></div>
+		<nav aria-label="Page navigation example" style="top:30%;position:relative;">
 			<ul class="pagination justify-content-center">
 				<li class="page-item"><a class="page-link" href="#"
 					aria-label="Previous"> <span aria-hidden="true">&laquo;</span>
@@ -85,4 +86,5 @@
 		</nav>
 	</div>
 </body>
+<%@include file="/resources/include/footer.jsp"%>
 </html>

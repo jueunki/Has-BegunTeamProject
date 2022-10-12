@@ -8,7 +8,7 @@
 </head>
 <footer>
 	<div
-		style="border: 1px solid gray; height: 300px; width: 1600px; border-radius: 30px 30px 30px 30px; display: flex; justify-content: center; margin: auto;">
+		style="border: 1px solid gray; height: 20vw; width: 95vw; border-radius: 30px 30px 30px 30px; display: flex; justify-content: center; margin: auto;">
 		<div id="one">
 			<h3>Bank Info</h3>
 			<span>국민은행 </span><br /> <a>12345-678-900000</a><br /> <span>신한은행

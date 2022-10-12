@@ -19,7 +19,7 @@
 		<div class="Logo"
 			style="width: 100px; height: 80px; border: 1px solid navy"></div>
 		<div class="Mainname" style="display: flex; justify-content: center">
-			<a class="has"> Has Began </a>
+			<h1 class="has"> Has Began </h1>
 		</div>
 
 		<div id="wrapper">
@@ -76,6 +76,10 @@ header {
 	text-align: left;
 	vertical-align: top;
 	list-style-type: disc;
+	width:27vw;
+	height:10vh;
+	position:relative;
+	right:35%; 
 }
 
 .qick {

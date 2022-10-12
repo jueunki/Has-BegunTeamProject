@@ -149,70 +149,8 @@ li {
   background-color: #ac7d88;
 }
 </style>
-<header>
-	<div class="inner">
-		<div class="qickmenu">
-			<ul class="topnav">
-				<li><a href="">로그인</a></li>
-				<li><a href="">가입하기</a></li>
-				<li><a href="">장바구니</a></li>
-				<li><a href="">고객센터</a></li>
-			</ul>
-		</div>
-		<div class="Logo"
-			style="width: 100px; height: 80px; border: 1px solid navy"></div>
-		<div class="Mainname" style="display: flex; justify-content: center">
-			<a class="has"> Has Began </a>
-		</div>
-	</div>
-	<div id="wrapper">
-      <nav id="nav">
-        <ul id="menu__list">
-          <li id="menu__menu">
-            헬스
-            <div id="subwrapper">
-              <nav id="subnav">
-                <ul id="submenu__list">
-                  <li id="submenu__menu">서브메뉴 1</li>
-                  <li id="submenu__menu">서브메뉴 2</li>
-                  <li id="submenu__menu">서브메뉴 3</li>
-                </ul>
-              </nav>
-            </div>
-          </li>
-          <li id="menu__menu">
-            비건/밀키트
-            <div id="subwrapper">
-              <nav id="subnav">
-                <ul id="submenu__list">
-                  <li id="submenu__menu">서브메뉴 a</li>
-                  <li id="submenu__menu">서브메뉴 b</li>
-                  <li id="submenu__menu">서브메뉴 c</li>
-                </ul>
-              </nav>
-            </div>
-          </li>
-          <li id="menu__menu">
-            건강/뷰티
-            <div id="subwrapper">
-              <nav id="subnav">
-                <ul id="submenu__list">
-                  <li id="submenu__menu">서브메뉴 !</li>
-                  <li id="submenu__menu">서브메뉴 @</li>
-                  <li id="submenu__menu">서브메뉴 #</li>
-                </ul>
-              </nav>
-            </div>
-          </li>
-          <li id="menu__menu"><a href="">게시판</a></li>
-          <li id="menu__menu"><a href="">오시는길</a></li>
-        </ul>
-      </nav>
-    </div>
-	
-	
-</header>
 
+<%@include file="/resources/include/header.jsp"%>
 <body>
 
 <div class="mid">
@@ -381,28 +319,7 @@ li {
       margin: auto;
     }
   </style>
-<footer>
-	<div
-		style="border: 1px solid gray; height: 300px; width: 1600px; border-radius: 30px 30px 30px 30px; display: flex; justify-content: center; margin: auto;">
-		<div id="one">
-			<h3>Bank Info</h3>
-			<span>국민은행 </span><br /> <a>12345-678-900000</a><br /> <span>신한은행
-			</span><br /> <a>12345-678-900000</a>
-			<h4>예금주 메이크미</h4>
-		</div>
-		<div id="one">
-			<h3>Customer Center</h3>
-			<span>1888-8888</span> <a> 평일 10 : 00 ~ 16 : 00</a><br /> <a>주말
-				및 공휴일 제외</a> <a>점심 시간 12:00 ~ 13:00</a>
-		</div>
-		<div id="one">
-			<h3>Company</h3>
-			<h5>이용약관 | 제휴문의 | 개인정보처리방침</h5>
-			<a> 상호명 : </a><br /> <a> 대표이사 : </a><br /> <a> 사업자등록번호 : </a><br />
-			<a> 주소 : </a><br /> <a>약도 보기</a><br />
-		</div>
-	</div>
-</footer>
+<%@include file="/resources/include/footer.jsp"%>
 
 
 
