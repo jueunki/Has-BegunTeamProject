@@ -178,7 +178,7 @@ body {
 					+ '        </div>'
 					+ '        <div class="body">'
 					+ '            <div class="img">'
-					+ '                <img src="" width="73" height="70">'
+					+ '                <img src="/Img/logo/Hasbegan.png" width="73" height="70">'
 					+ '           </div>'
 					+ '            <div class="desc">'
 					+ '                <div class="ellipsis">반월당 13번출구 앞</div>'

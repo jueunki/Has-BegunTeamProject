@@ -17,10 +17,10 @@
 			</ul>
 		</div>
 		<div class="Logo"
-			style="width: 100px; height: 80px; border: 1px solid navy"></div>
+			style="width: 100px; height: 80px; border: 1px solid navy"><img src="/webapp/img/logo/Hasbegan.png"></div>
 		<div class="Mainname" style="display: flex; justify-content: center">
-			<h1 class="has"> Has Began </h1>
-		</div>
+			<h1 class="has"> Has Began </h1> 
+		</div>  
 
 		<div id="wrapper">
 			<nav id="nav">
