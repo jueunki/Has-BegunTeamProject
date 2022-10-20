@@ -53,6 +53,11 @@ public class TestController {
 		log.info("URL : /main.do");
 		return "signup";		
 	}
+	@GetMapping("/product")
+	public String testFunc9() {
+		log.info("URL : /main.do");
+		return "product";		
+	}
 
 	
 	

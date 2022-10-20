@@ -12,7 +12,7 @@
 </head>
 <%@include file="/resources/include/header.jsp"%>
 <body>
-
+ 
 	<h2 style="position: relative; left: 45%; padding-top: 5%; font-weight: bolder;">게시글 수정</h2>
 <div>
 	<div class="mb-3" style="width:25vw; position: relative; left: 38%; padding-top: 5%;"> 
