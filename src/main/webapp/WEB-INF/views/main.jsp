@@ -14,7 +14,7 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Has Began</title>
 </head>
 <style>
 .topnav {
@@ -149,11 +149,71 @@ li {
   background-color: #ac7d88;
 }
 </style>
+ <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .content {
+        width: 100%;
+        height: 3500px; /* 스크롤바가 생기도록 강제로 가상 컨텐츠 높이 생성 */
+        
+        
+      }
+      /* 프로그래스바 */
+      .progressbar {
+        position: fixed; /* 페이지 상단에 프로그레스바 고정 */
+        height: 8px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 500;
+      }
+      .progressbar > .progress {
+        width: 0%; /* 프로그래스바 진행 정도 */
+        height: 100%;
+        transition: width 0.3s ease; /* 부드러운 가속도 애니메이션 추가 */
+        background-color: #a00;
+      }
+      a {
+        text-decoration: none;
+      }
+      ul li{
+        list-style: none;
+      }
+      body{
+ -ms-overflow-style: none;
+ }
+ 
+::-webkit-scrollbar {
+  display: none;
+}
 
+
+    </style>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        //스크롤 이벤트 처리
+        window.addEventListener("scroll", function (event) {
+          if (document.querySelector(".progressbar") != null) setProgress();
+        });
+      });
+
+      function setProgress() {
+        let currY = document.documentElement.scrollTop; //스크롤한 높이
+        let totalY =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight; //전체 높이
+        let percentage = (currY / totalY) * 100; //퍼센트 값
+        document.querySelector(".progress").style.width = percentage + "%"; //프로그래스바 너비 변경
+      }
+    </script>
 <%@include file="/resources/include/header.jsp"%>
 <body>
-
-<div class="mid" style="top:500px">
+    <div class="content">
+<div class="mid" >
 	<div class="imgsd"
 		style="width: 70vw; height: 30vh; border: 1px solid gray; background-color: gray; position: absolute; left: 15%; top: 35%;">슬라이드
 		이미지 자리</div>
@@ -268,6 +328,12 @@ li {
 		</div>
 	</div>
 </div>
+
+    </div>
+    <div id="progressbar" class="progressbar">
+      <div class="progress"></div>
+    </div>
+
 
 
 
