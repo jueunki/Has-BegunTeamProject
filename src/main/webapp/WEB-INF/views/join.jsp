@@ -1,11 +1,8 @@
-<%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-
-<%-- <%@include file="topmenu.jsp"%> --%>
-
-
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
@@ -114,10 +111,6 @@
     }
   </style>
   <body>
-  <div style="height:150px ">
-  	<img alt="" src="/img/logo/HasBeganlogo.jpg">
-  </div>
-  <hr>
     <div class="joinwarp" style="margin: 0 auto; width: 500px">
       <h2>회원정보 입력</h2>
       <!-- 
@@ -287,5 +280,4 @@
      
     </div>
   </body>
-
 </html>

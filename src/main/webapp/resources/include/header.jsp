@@ -11,7 +11,7 @@
 		<div class="qickmenu">
 			<ul class="topnav">
 				<li class="qick"><a href="">로그인</a></li>
-				<li class="qick"><a href="">가입하기</a></li>
+				<li class="qick"><a href="/join">가입하기</a></li>
 				<li class="qick"><a href="">장바구니</a></li>
 				<li class="qick"><a href="">고객센터</a></li>
 			</ul>
