@@ -153,7 +153,7 @@ li {
 <%@include file="/resources/include/header.jsp"%>
 <body>
 
-<div class="mid">
+<div class="mid" style="top:500px">
 	<div class="imgsd"
 		style="width: 70vw; height: 30vh; border: 1px solid gray; background-color: gray; position: absolute; left: 15%; top: 35%;">슬라이드
 		이미지 자리</div>

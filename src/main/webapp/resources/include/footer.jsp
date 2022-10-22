@@ -22,7 +22,7 @@
 		</div>
 		<div id="one">
 			<h3>Company</h3>
-			<h5>이용약관 | 제휴문의 | 개인정보처리방침</h5>
+			<span>이용약관 | 제휴문의 | 개인정보처리방침</span>
 			<a> 상호명 : </a><br /> <a> 대표이사 : </a><br /> <a> 사업자등록번호 : </a><br />
 			<a> 주소 : </a><br /> <a>약도 보기</a><br />
 		</div>
@@ -31,7 +31,7 @@
 <style>
     #one {
       width: 300px;
-      height: 200px;
+      height: 200px; 
       margin-top: 2.5%;
       margin: auto;
     }
